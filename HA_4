@@ -1,0 +1,16 @@
+public class Multiply {
+    int multiply(int x, int y) {
+        if (y == 0) {
+            return 0;
+        }
+        return x + multiply(x, y - 1);
+    }
+
+    public static void main(String[] args) {
+        Multiply obj = new Multiply();
+        int x = 5;
+        int y = 3;
+        int result = obj.multiply(x, y);
+        System.out.println("Product: " + result);
+    }
+}
