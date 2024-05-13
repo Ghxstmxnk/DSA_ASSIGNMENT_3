@@ -1,0 +1,18 @@
+public class Ques_2 {
+    public static void main(String[] args) {
+        String[] favColors = {"Pink", "Teal", "Grey", "Purple", "Indigo"};
+
+       
+        try {
+            System.out.println("My sixth favorite color is: " + favColors[5]);
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            System.out.println(ex);
+        }
+         try {
+            favColors[1] = null;
+            System.out.println("My second favorite color is: " + favColors[1].toUpperCase());
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+    }
+}
