@@ -1,0 +1,17 @@
+public class Convert {
+    String binary(int y) {
+        int a;
+        if (y > 0) {
+            a = y % 2;
+            return (binary(y / 2) + "" + a);
+        }
+        return "";
+    }
+
+    public static void main(String[] args) {
+        Convert obj = new Convert();
+        int n = 25;
+        String x = obj.binary(n);
+        System.out.println("Binary number: " + x);
+    }
+}
